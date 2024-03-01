@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src/ts",
+        "outDir": "./public/js",
+        "target": "ES2016",
+        "module": "ES2015"
+    },
+}

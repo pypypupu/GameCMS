@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We still be learning alright</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+    <div class="bauble">
+
+    </div>
+    <h1>GAME CMS</h1>
+    <form action="submit" id="add-game">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required>
+        </div>
+        <div>
+            <label for="release">Release Date</label>
+            <input type="date" name="release" id="release" required>
+        </div>
+        <div>
+            <label for="rating">Rating</label>
+            <input type="number" name="rating" id="rating" min="0" max="10" value="5" required>
+        </div>
+        <div>
+            <label for="type">Game Type</label>
+            <select name="type" id="type" required>
+                <option value="digital">Digital</option>
+                <option value="board">Board</option>
+            </select>
+        </div>
+
+        <div id="game-inputs">
+            <label for="game-input" id="game-input-label">Number of players</label>
+            <select name="game-input" id="game-input" required></select>
+        </div>
+        <button type="submit">Add Game</button>
+    </form>
+    <main>
+        <button id="show-all-btn">Show all</button>
+        <button id="show-digital-btn">Show video games</button>
+        <button id="show-board-btn">Show board games</button>
+        <div id="game-container-wrapper">
+            <h2>Games</h2>
+            <article id="game-container">
+            </article>
+        </div>
+    </main>
+    <script type="module" src="./public/js/script.js"></script>
+</body>
+
+</html>
